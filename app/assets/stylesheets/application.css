@@ -1,0 +1,268 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ */
+
+@font-face { font-family: CatalogoExtraGruesa; src: url('Catalogo ExtraGruesa.otf') format('otf'); } 
+@font-face { font-family: CatalogoFina; src: url('Catalogo Fina.otf') format('otf'); } 
+@font-face { font-family: CatalogoGruesa; src: url('Catalogo Gruesa.otf') format('otf'); } 
+@font-face { font-family: Catalogo; src: url('Catalogo.otf') format('otf'); } 
+@font-face { font-family: CatalogoSemiGruesa; src: url('Catalogo Semigruesa.otf') format('otf'); } 
+
+.carousel {
+	position: absolute;
+	width: 100%;
+	height: 750px;
+}
+
+/*Roomy's mainpanel*/
+.logo {
+	position: relative;
+}
+
+.mainpanel-nieve {
+	background-image:url('/assets/main-panel-bg.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 700px;
+}
+
+.mainpanel-playa {
+	background-image:url('/assets/fondo-playa.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 700px;
+}
+
+.mainpanel-clase {
+	background-image:url('/assets/fondo-clase.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 700px;
+}
+
+.call-to-action {
+	position: relative;
+	height: 230px;
+}
+
+.suscribe {
+	position: absolute;
+	height: 100%;
+	width: 90%;
+}
+
+.suscribe-box {
+	border-radius: 0px 45px 0px;
+	background-color: rgba(6,153,209,0.77);;
+	position: absolute;
+	height: 100%;
+}
+
+.suscribe-box .content {
+	padding: 30px 0 0 25px;
+}
+
+.suscribe h1 {
+	font-family: 'Catalogo',Helvetica;
+	text-align: left;
+	font-size: 3.3em;
+	color: #fff;
+	width: 100%;
+}
+
+.suscribe p {
+	font-family: 'CatalogoFina',Helvetica;
+	text-align: left;
+	width: 100%;
+	font-size: 1.55em;
+	margin-top: 20px;
+	line-height: 1.2em;
+	color: #fff;
+}
+
+.suscribe .input-medium {
+	width: 70%;
+}
+
+.suscribe .btn {
+	width: 20%;
+	border-radius: 20px;
+	position: absolute;
+	right: 25px;
+}
+
+.social {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 10%;
+}
+
+.social-elements {
+	background-color: rgba(162,162,162,0.8);
+	padding: 2px 0 7px 5px;
+	height: 100%;
+	width: 50px;
+}
+
+.social-facebook {
+	margin-top: 5px;
+	background: url('/assets/logo-facebook.png') 0 0;
+	background-size: contain;
+	display: block;
+	height: 45px;
+	width: 45px;
+	text-indent: -99999px;
+}
+
+.social-twitter {
+	background: url('/assets/logo-twitter.png') 0 0;
+	background-size: contain;
+	margin-top: 5px;
+	display: block;
+	height: 45px;
+	width: 45px;
+	text-indent: -99999px;
+}
+
+/*Roomy's benefits*/
+.benefits {
+	margin-top: 200px;
+}
+
+.benefits .imagebox {
+	width: 150px;
+	height: 150px;
+    margin: 0 auto;
+}
+
+.benefits h3 {
+	font-family: 'Catalogo',sans-serif;
+	color: #E5352D;
+	font-size: 2.1em;
+	text-align: center;
+}
+
+.benefits p {
+	font-family: 'CatalogoFina',Helvetica;
+	font-size: 1.25em;
+	text-align: justify;
+	color: #4A4A4A;
+}
+
+/*Roomy's steps*/
+.steps {
+	background-image:url('/assets/steps-bg.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 60px;
+}
+
+.steps .imagebox {
+	width: 240px;
+	height: 240px;
+	margin: 0 auto;
+}
+
+.steps h3 {
+	font-family: 'Catalogo',sans-serif;
+	text-align: center;
+	font-size: 1.8em;
+	color: #616161;
+}
+
+/*Roomy's footer*/
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+footer {
+	color: #E5352D;
+	padding-top: 20px;
+	font-family: 'Catalogo',sans-serif;
+	font-size: 1.25em;
+	height: 80px;
+}
+
+footer p {
+	float: left;
+}
+
+footer ul {
+	font-family: 'CatalogoSemiGruesa',sans-serif;
+	margin-left: 5px;
+	float: left;
+}
+
+footer ul li {
+	display: inline;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 985px) and (max-width: 1200px) {
+		
+	.suscribe h1 {
+		font-size: 2.8em;
+	}
+	
+	.suscribe p {
+		margin-top: 10px;
+	}
+		
+	.steps {
+		background-image:none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 985px) {
+	
+	.suscribe h1 {
+		font-size: 2.0em;
+	}
+	
+	.suscribe p {
+		margin-top: 10px;
+	}
+	
+	.benefits {
+		margin-top: 250px;
+	}
+	
+	.steps {
+		background-image:none;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+	.suscribe-box .content {
+		padding: 10px 0 0 10px;
+	}
+	
+	.suscribe h1 {
+		font-size: 2.0em;
+	}
+	
+	.suscribe p {
+		margin-top: 10px;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+	.steps {
+		background-image:none;
+	}
+}
