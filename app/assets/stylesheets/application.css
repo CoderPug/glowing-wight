@@ -10,11 +10,11 @@
  *
  */
 
-@font-face { font-family: CatalogoExtraGruesa; src: url('Catalogo ExtraGruesa.otf') format('otf'); } 
-@font-face { font-family: CatalogoFina; src: url('Catalogo Fina.otf') format('otf'); } 
-@font-face { font-family: CatalogoGruesa; src: url('Catalogo Gruesa.otf') format('otf'); } 
-@font-face { font-family: Catalogo; src: url('Catalogo.otf') format('otf'); } 
-@font-face { font-family: CatalogoSemiGruesa; src: url('Catalogo Semigruesa.otf') format('otf'); } 
+@font-face { font-family: CatalogoExtraGruesa; src: url('../fonts/Catalogo ExtraGruesa.otf') format('otf'); } 
+@font-face { font-family: CatalogoFina; src: url('../fonts/Catalogo Fina.otf') format('otf'); } 
+@font-face { font-family: CatalogoGruesa; src: url('../fonts/Catalogo Gruesa.otf') format('otf'); } 
+@font-face { font-family: Catalogo; src: url('../fonts/Catalogo.otf') format('otf'); } 
+@font-face { font-family: CatalogoSemiGruesa; src: url('../fonts/Catalogo Semigruesa.otf') format('otf'); } 
 
 .carousel {
 	position: absolute;
@@ -208,6 +208,9 @@ footer ul li {
 	display: inline;
 }
 
+footer ul li img{
+	width:28px;
+}
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 985px) and (max-width: 1200px) {
 		

@@ -13,3 +13,33 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function(){
+	$('.btnCallToAction').click(function(){
+
+		var email = $('.txtCallToAction').val();
+
+		if (!validateEmail(email)) {
+			$('#modalInvalidEmail').modal();
+			return false;
+		};
+
+		$.ajax({
+			url: '/users',
+			type: 'POST',
+			timeout: 12000,
+			dataType: 'text',
+			data:{
+				'post[email]' : email
+			}
+		}).done(function(responseText){
+			$('#modalSuccess').modal();
+		}).fail(function(failMessage){
+			$('#modalError').modal();
+		});
+	});
+});
+
+function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
